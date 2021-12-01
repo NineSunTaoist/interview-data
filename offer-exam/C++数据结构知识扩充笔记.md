@@ -126,6 +126,7 @@ str.length() //求长度 与size完全一样
 ### 7、isalpha 判断字符字母数字
 
 ```
+# 注意，只有检测字符或字符串时才有效
 isalpha 是否为字母
 	islower 是否为小写字母
 	isupper 是否为大写字母
