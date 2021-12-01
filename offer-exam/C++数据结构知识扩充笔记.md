@@ -123,7 +123,7 @@ str.length() //求长度 与size完全一样
 
 
 
-### 7、判断字符是否是字母或数字
+### 7、isalpha 判断字符字母数字
 
 ```
 isalpha 是否为字母
@@ -165,5 +165,29 @@ que.size()
 
 // 获取第一个
 int pre = que.front()；
+```
+
+
+
+### 10、map 字典操作
+
+```
+std::map<int, int> dic; // 创建
+// 添加键值对
+dic.insert(pair<int,int>(1,2));
+dic[1] = 2;
+
+// 通过key找value
+dic[3] // 最直接的方法
+
+std::map<int, int>::iterator ite = dic.find(3);
+printf("%d", ite->first); // 打印键
+printf("%d", ite->second); // 打印值
+
+// 通过value找key
+for (auto ite = dic.begin(); ite != dic.end() ; ++ite) {
+    if (ite->second == 2)
+        return ite->first;
+}
 ```
 
