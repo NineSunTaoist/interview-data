@@ -115,11 +115,10 @@ size_t bucket(const key_type& k)	返回元素key所在的桶号
 ```
 // 返回该字符的位置
 int pos = str.find('X')
-<<<<<<< HEAD
 
+str.c_str() // 获取%s的字符串
 str.size() //求长度 
-=======
-str.size()
+str.length() //求长度 与size完全一样
 ```
 
 
