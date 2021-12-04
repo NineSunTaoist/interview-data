@@ -37,6 +37,8 @@ for(int i : pArray) {
 
 ### 3、list 链表容器
 
+第一次插入时间复杂度为O(n)，之后重复插入只需要O(1)
+
 ```
 // 声明
 std::list<int> container;
